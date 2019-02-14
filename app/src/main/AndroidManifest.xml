@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignIn" />
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".SingUpActivity"></activity>
     </application>
 
 </manifest>
