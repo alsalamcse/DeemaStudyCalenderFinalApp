@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "280972132129",
+    "firebase_url": "https://studycalenderfinalapp-30c60.firebaseio.com",
+    "project_id": "studycalenderfinalapp-30c60",
+    "storage_bucket": "studycalenderfinalapp-30c60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280972132129:android:a7258cf42f20293a",
+        "android_client_info": {
+          "package_name": "com.example.owner.studycalenderfinalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280972132129-258n23i3363h2qccv3cfgvrrvk8r6uct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.owner.studycalenderfinalapp",
+            "certificate_hash": "8d4e87598d212bdb282d05faa7766dc9c486dbdf"
+          }
+        },
+        {
+          "client_id": "280972132129-1io5fg48od7sdh0dc3tgstc08h18f8qm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA02TXcBuafd4cBq8HosKoXgzZ-pdHeqXE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280972132129-1io5fg48od7sdh0dc3tgstc08h18f8qm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
