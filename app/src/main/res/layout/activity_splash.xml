@@ -49,7 +49,7 @@
                 android:id="@+id/btnAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Have an account?Get Started" />
+                android:text="Have an account?Login" />
 
         </LinearLayout>
     </LinearLayout>

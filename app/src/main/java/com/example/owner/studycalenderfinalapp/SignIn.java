@@ -37,7 +37,6 @@ public class SignIn extends AppCompatActivity {
             edEmail = (EditText) findViewById(R.id.edEmail);
             edPassWord = (EditText) findViewById(R.id.edPass);
             btnLogIN = (Button) findViewById(R.id.btnLogIn);
-            btnSignUp = (Button) findViewById(R.id.btnSignUp);
            auth = FirebaseAuth.getInstance();
            user = auth.getCurrentUser();//
 
@@ -48,14 +47,7 @@ public class SignIn extends AppCompatActivity {
                     dataHandler();
                }
            });
-            btnSignUp.setOnClickListener(new View.OnClickListener() {
-               @Override
-                public void onClick(View view) {
-                    // كود الانتقال إلى الشاشة الأخرى
-                    Intent i = new Intent(loginActivity.this, SingUpActivity.class);
-                    startActivity(i);
 
-            });
 
         }
 
@@ -84,7 +76,7 @@ public class SignIn extends AppCompatActivity {
         }
 
         private void SignIn(String email,String Pass) {
-            auth.signInWithEmailAndPassword(email, PassWord).addOnCompleteListener(loginActivity.this, new OnCompleteListener<AuthResult>() {
+            auth.signInWithEmailAndPassword(email, Pass).addOnCompleteListener(loginActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
