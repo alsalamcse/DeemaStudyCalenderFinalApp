@@ -34,8 +34,7 @@ public class SignIn extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_sign_in);
 
-            edEmail = (EditText) findViewById(R.id.edEmail);
-            edPassWord = (EditText) findViewById(R.id.edPass);
+            
             btnLogIN = (Button) findViewById(R.id.btnLogIn);
            auth = FirebaseAuth.getInstance();
            user = auth.getCurrentUser();//

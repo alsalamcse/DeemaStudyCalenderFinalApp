@@ -24,7 +24,8 @@
         <activity android:name=".SignIn" />
         <activity android:name=".SplashActivity" />
         <activity android:name=".SingUpActivity" />
-        <activity android:name=".AddSemesterActivity"></activity>
+        <activity android:name=".AddSemesterActivity" />
+        <activity android:name=".AddCourseActivity"></activity>
     </application>
 
 </manifest>
