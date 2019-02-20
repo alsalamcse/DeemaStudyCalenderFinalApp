@@ -1,5 +1,6 @@
 package com.example.owner.studycalenderfinalapp;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -86,6 +87,8 @@ public class SingUpActivity extends AppCompatActivity {
                     Toast.makeText(SingUpActivity.this,"Authentication successful",Toast.LENGTH_SHORT).show();
                     //updateUserProfile(task.getResult().getUser();
                     finish();
+                    Intent intent=new Intent(SingUpActivity.this,AddSemesterActivity.class);
+                    startActivity(intent);
                 }
                 else {
                     Toast.makeText(SingUpActivity.this, "Authentication failed" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

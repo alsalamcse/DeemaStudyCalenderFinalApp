@@ -11,8 +11,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class SplashActivity extends AppCompatActivity {
-    private TextView TvWelcome, TvText, TvAccount;
-    private Button btnStart, btnAccount;
+    private TextView TvWelcome, TvText, tvAccount1;
+    private Button btnGetStart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,17 +20,19 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         TvText = (TextView) findViewById(R.id.TvText);
         TvWelcome = (TextView) findViewById(R.id.TvWelcome);
-        btnStart = (Button) findViewById(R.id.btnStart);
-        btnAccount = (Button) findViewById(R.id.btnAccount);
+        btnGetStart = (Button) findViewById(R.id.btnStart);
+        tvAccount1 = (TextView) findViewById(R.id.tvAccount1);
 
-        btnStart.setOnClickListener(new View.OnClickListener() {
+
+
+        btnGetStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(SplashActivity.this, SingUpActivity.class);
                 startActivity(i);
             }
         });
-        btnAccount.setOnClickListener(new View.OnClickListener() {
+        tvAccount1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(SplashActivity.this, SignIn.class);

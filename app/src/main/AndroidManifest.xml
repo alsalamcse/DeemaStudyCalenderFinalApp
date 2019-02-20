@@ -25,7 +25,19 @@
         <activity android:name=".SplashActivity" />
         <activity android:name=".SingUpActivity" />
         <activity android:name=".AddSemesterActivity" />
-        <activity android:name=".AddCourseActivity"></activity>
+        <activity android:name=".AddCourseActivity" />
+        <activity
+            android:name=".MainTabActivity"
+            android:label="@string/title_activity_main_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainTabsActivity"
+            android:label="@string/title_activity_main_tabs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

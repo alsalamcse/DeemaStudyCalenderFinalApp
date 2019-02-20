@@ -11,24 +11,55 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:layout_marginBottom="34dp"
         android:text="Add Course"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="30sp"
         android:textStyle="bold"
         app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/edCourseTittle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
         android:layout_marginLeft="6dp"
         android:layout_marginTop="88dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/edCourseTittle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <EditText
+        android:id="@+id/edCourseTittle"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="372dp"
+        android:ems="10"
+        android:hint="Course Tittle"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton1"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddCourse1" />
+
+    <Button
+        android:id="@+id/btnSave1"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
