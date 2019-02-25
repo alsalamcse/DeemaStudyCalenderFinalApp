@@ -18,9 +18,9 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        TvText = (TextView) findViewById(R.id.TvText);
-        TvWelcome = (TextView) findViewById(R.id.TvWelcome);
-        btnGetStart = (Button) findViewById(R.id.btnStart);
+        TvText = (TextView) findViewById(R.id.tvText);
+        TvWelcome = (TextView) findViewById(R.id.tvWelCome);
+        btnGetStart = (Button) findViewById(R.id.btnGetStarted);
         tvAccount1 = (TextView) findViewById(R.id.tvAccount1);
 
 

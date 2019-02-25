@@ -26,7 +26,7 @@ public class SignIn extends AppCompatActivity {
     public class loginActivity extends AppCompatActivity {
         private EditText edEmail, edPassWord;
         private Button btnLogIN, btnSignUp;
-       FirebaseAuth auth;//to establish sign in sign up
+        FirebaseAuth auth;//to establish sign in sign up
         FirebaseUser user;//user
 
         @Override
@@ -36,16 +36,16 @@ public class SignIn extends AppCompatActivity {
 
 
             btnLogIN = (Button) findViewById(R.id.btnLogIn);
-           auth = FirebaseAuth.getInstance();
-           user = auth.getCurrentUser();//
+            auth = FirebaseAuth.getInstance();
+            user = auth.getCurrentUser();//
 
 
-           btnLogIN.setOnClickListener(new View.OnClickListener() {
+            btnLogIN.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     dataHandler();
-               }
-           });
+                }
+            });
 
 
         }
@@ -68,30 +68,34 @@ public class SignIn extends AppCompatActivity {
 
             }
             if (isok) {
-                SignIn(email,passWord);
+                SignIn(email, passWord);
 
             }
 
         }
 
-        private void SignIn(String email,String Pass) {
+        private void SignIn(String email, String Pass) {
             auth.signInWithEmailAndPassword(email, Pass).addOnCompleteListener(loginActivity.this, new OnCompleteListener<AuthResult>() {
-                    @Override
-               public void onComplete(@NonNull Task<AuthResult> task) {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(loginActivity.this, "signIn successful", Toast.LENGTH_SHORT).show();
-                       Intent intent = new Intent(loginActivity.this, MainTabsActivity.class);
-                       startActivity(intent);
+                        Intent intent = new Intent(loginActivity.this, MainTabsActivity.class);
+                        startActivity(intent);
                         finish();
                     } else {
                         Toast.makeText(loginActivity.this, "signIn failed." + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         task.getException().printStackTrace();
 
+                    }
+
+
                 }
-
             });
-        }
 
         }
+    }
+}
+
 
 

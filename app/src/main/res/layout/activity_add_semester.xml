@@ -16,11 +16,12 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toTopOf="@+id/tvAddCourse "
+        app:layout_constraintBottom_toTopOf="@+id/tvAddSemester"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling,UnknownId" />
 
     <TextView
         android:id="@+id/tvAddCourse2"
